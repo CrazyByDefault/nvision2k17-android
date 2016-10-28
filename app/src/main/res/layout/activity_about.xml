@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flavienlaurent.discrollview.lib.DiscrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.flavienlaurent.discrollview.lib.DiscrollViewContent
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:paddingTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_alpha="true"
+            android:text="@string/about_1"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="22sp"
+            android:textColor="#dedede"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/colorPrimary"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_threshold="0.7" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromLeft|fromBottom"
+            android:id="@+id/driftImage"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            discrollve:discrollve_fromBgColor="#88EE66"
+            discrollve:discrollve_toBgColor="#447733"
+            discrollve:discrollve_threshold="0.7"
+            discrollve:discrollve_alpha="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            discrollve:discrollve_translation="fromRight"
+            discrollve:discrollve_alpha="true"
+            android:id="@+id/hackImage"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/about_2"
+            android:textSize="22sp"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromBottom"
+            />
+
+
+
+
+
+    </com.flavienlaurent.discrollview.lib.DiscrollViewContent>
+
+</com.flavienlaurent.discrollview.lib.DiscrollView>
